@@ -20,16 +20,16 @@ There are two types of pod autoscalers: Vertical Pod Autoscaler (VPA) can either
 
 ![image](https://github.com/Aryan8912/Kubernetes-zero-to-hero/assets/92007507/adad64c0-4a3b-4a95-8392-1eabf836eeba) Source-Kubecast
 
-##### How does HPA work?
+#### How does HPA work?
 
 ![image](https://github.com/Aryan8912/Kubernetes-zero-to-hero/assets/92007507/80c80fae-bca0-418a-b6d6-284ebd7ba957)
 In simple terms, HPA works in a “check, update, check again” style loop. Here’s how each of the steps in that loop work.
 
-HPA continuously monitors the metrics server for resource usage.
-Based on the collected resource usage, HPA will calculate the desired number of replicas required.
-Then, HPA decides to scale up the application to the desired number of replicas.
-Finally, HPA changes the desired number of replicas.
-Since HPA is continuously monitoring, the process repeats from Step 1.
+1. HPA continuously monitors the metrics server for resource usage.
+2. Based on the collected resource usage, HPA will calculate the desired number of replicas required.
+3. Then, HPA decides to scale up the application to the desired number of replicas.
+4. Finally, HPA changes the desired number of replicas.
+5. Since HPA is continuously monitoring, the process repeats from Step 1.
 
 ### 1. Metrics server
 ### 2. Horizontal Pod Autoscaler(HPA)

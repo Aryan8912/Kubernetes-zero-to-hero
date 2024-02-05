@@ -18,7 +18,18 @@ Autoscaling eliminates the need for constant manual reconfiguration to match cha
 
 There are two types of pod autoscalers: Vertical Pod Autoscaler (VPA) can either increase or decrease the CPU and memory allocated to each pod, while the Horizontal Pod Autoscaler (HPA) can replicate or terminate pods, thus affecting the total pod count. Affecting the cluster capacity as a whole, the Cluster Autoscaler (CA) adds or removes nodes dedicated to the cluster to provide the appropriate amount of computing resources needed to host the desired workloads. In combination, the three dimensions of autoscaling help strike—in near-real-time—the delicate balance between preventing performance bottlenecks or outages and avoiding overprovisioning.
 
-![image](https://github.com/Aryan8912/Kubernetes-zero-to-hero/assets/92007507/adad64c0-4a3b-4a95-8392-1eabf836eeba)
+![image](https://github.com/Aryan8912/Kubernetes-zero-to-hero/assets/92007507/adad64c0-4a3b-4a95-8392-1eabf836eeba) Source-Kubecast
+
+##### How does HPA work?
+
+![image](https://github.com/Aryan8912/Kubernetes-zero-to-hero/assets/92007507/80c80fae-bca0-418a-b6d6-284ebd7ba957)
+In simple terms, HPA works in a “check, update, check again” style loop. Here’s how each of the steps in that loop work.
+
+HPA continuously monitors the metrics server for resource usage.
+Based on the collected resource usage, HPA will calculate the desired number of replicas required.
+Then, HPA decides to scale up the application to the desired number of replicas.
+Finally, HPA changes the desired number of replicas.
+Since HPA is continuously monitoring, the process repeats from Step 1.
 
 ### 1. Metrics server
 ### 2. Horizontal Pod Autoscaler(HPA)

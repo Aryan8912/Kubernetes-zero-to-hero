@@ -38,6 +38,24 @@ In simple terms, HPA works in a “check, update, check again” style loop. Her
 ### 5. Overprovisioner
 ### 6. Custom metrics(Keda)
 
+
+## What Is Kubernetes Observability? 
+
+Kubernetes observability is the process of gaining insight into the behavior and performance of applications running on Kubernetes, as well as the underlying infrastructure and components, in order to identify and resolve issues more effectively. It can help ensure the stability and performance of Kubernetes workloads, reduce downtime and outages, and improve efficiency.
+
+### The Pillars of Kubernetes Observability 
+
+The pillars of Kubernetes observability are:
+
+1. **Metrics**: Metrics provide a quantitative measurement of various aspects of the system, such as resource utilization, system performance, and application behavior. Metrics are often collected using monitoring tools like Prometheus or InfluxDB.
+
+2. **Logs**: Logs provide a record of events and activities within the system, such as application logs, system logs, and network logs. Logs can be collected and analyzed using tools like Fluentd or ELK.
+
+3. **Tracing**: Tracing provides visibility into the flow of requests and the dependencies between different components in a system. Tracing helps to identify performance bottlenecks and diagnose issues. Tracing can be performed using tools like Jaeger or Zipkin.
+
+4. **Visualization**: Visualization provides a way to represent the data collected from metrics, logs, and tracing in a way
+that is easy to understand and navigate. Visualization can be performed using tools like Grafana or Kibana.
+
 ## Availability
 ### 1. Taints and tolerations 
 ### 2. Liveness, readiness, and startup probes
